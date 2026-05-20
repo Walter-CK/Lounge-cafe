@@ -5,7 +5,6 @@
     --gold: #d97706;
     --gold-dark: #78350f;
     --gold-deep: #78350f;
-    --red: #a83225;
     --green: #166534;
     --ink: #17120d;
     --muted: #6f665c;
@@ -76,7 +75,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .eyebrow {
-    color: var(--red);
+    color: var(--gold);
     font-size: 0.78rem;
     font-weight: 800;
     letter-spacing: 0.08em;
@@ -99,7 +98,7 @@ button, input, select, textarea { font: inherit; }
 
 .btn:hover { transform: translateY(-1px); }
 .btn-lg { min-height: 52px; padding-inline: 1.6rem; }
-.btn-primary { color: var(--white); background: var(--red); box-shadow: 0 14px 28px rgba(168, 50, 37, 0.22); }
+.btn-primary { color: var(--white); background: var(--gold); box-shadow: 0 14px 28px rgba(168, 50, 37, 0.22); }
 .btn-primary:hover { background: #8e291f; }
 .btn-outline { color: var(--gold-dark); background: var(--white); border: 1px solid var(--line); }
 .btn-outline:hover { box-shadow: 0 10px 24px rgba(69, 26, 3, 0.12); }
@@ -134,7 +133,7 @@ button, input, select, textarea { font: inherit; }
     white-space: nowrap;
 }
 
-.nav-logo strong { color: var(--red); font-weight: 400; }
+.nav-logo strong { color: var(--gold); font-weight: 400; }
 .nav-logo-img { width: 40px; height: 40px; object-fit: contain; }
 
 .nav-links {
@@ -148,7 +147,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .nav-links a { padding: 0.5rem 0.2rem; }
-.nav-links a:hover { color: var(--red); }
+.nav-links a:hover { color: var(--gold); }
 .nav-order { color: var(--gold-dark) !important; }
 
 .nav-actions {
@@ -254,7 +253,7 @@ button, input, select, textarea { font: inherit; }
     color: var(--gold-dark);
 }
 
-.hero-heading-accent { color: var(--red); }
+.hero-heading-accent { color: var(--gold); }
 
 .hero-sub {
     margin: 1.25rem auto 0;
@@ -291,7 +290,7 @@ button, input, select, textarea { font: inherit; }
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    color: var(--red);
+    color: var(--gold);
     font-weight: 800;
     white-space: nowrap;
 }
@@ -322,7 +321,7 @@ button, input, select, textarea { font: inherit; }
 .update-card-img { height: 205px; background: var(--line); cursor: pointer; }
 .update-card-img img, .update-card-img video { width: 100%; height: 100%; object-fit: cover; }
 .update-card-body { padding: 1rem 1.1rem 1.2rem; }
-.update-date { display: inline-flex; gap: 0.35rem; color: var(--red); font-size: 0.76rem; font-weight: 800; margin-bottom: 0.45rem; }
+.update-date { display: inline-flex; gap: 0.35rem; color: var(--gold); font-size: 0.76rem; font-weight: 800; margin-bottom: 0.45rem; }
 .update-title { color: var(--gold-dark); font-family: "DM Serif Display", serif; font-size: 1.12rem; line-height: 1.25; }
 
 .menu-section {
@@ -627,7 +626,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .listing-item strong {
-    color: var(--red);
+    color: var(--gold);
     white-space: nowrap;
 }
 
