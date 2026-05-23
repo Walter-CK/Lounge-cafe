@@ -1,32 +1,6 @@
 (function () {
     const menu = window.LOUNGE_MENU;
-    const root = document.documentElement;
     const page = document.body.dataset.page;
-    const savedLanguage = localStorage.getItem("loungeLanguage");
-    let language = savedLanguage === "vi" ? "vi" : "en";
-
-    function t(key) {
-        return menu.translations[language][key] || menu.translations.en[key] || key;
-    }
-
-    function setLanguage(nextLanguage) {
-        language = nextLanguage === "vi" ? "vi" : "en";
-        localStorage.setItem("loungeLanguage", language);
-        root.lang = language;
-        document.querySelectorAll("[data-lang-current]").forEach((node) => {
-            node.textContent = language.toUpperCase();
-        });
-        document.querySelectorAll("[data-i18n]").forEach((node) => {
-            node.textContent = t(node.dataset.i18n);
-        });
-        document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
-            node.setAttribute("aria-label", t(node.dataset.i18nAria));
-        });
-        document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
-            node.setAttribute("placeholder", t(node.dataset.i18nPlaceholder));
-        });
-        renderDynamic();
-    }
 
     function renderDynamic() {
         if (page === "home") {
@@ -45,9 +19,9 @@
                 <span class="category-card-shade"></span>
                 <span class="category-card-content">
                     <span class="category-card-icon"><i class="fa-solid ${category.icon}"></i></span>
-                    <span class="category-card-title">${category.name[language]}</span>
-                    <span class="category-card-copy">${category.intro[language]}</span>
-                    <span class="category-card-meta">${category.items.length} ${t("menu.items")} <i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="category-card-title">${category.name}</span>
+                    <span class="category-card-copy">${category.intro}</span>
+                    <span class="category-card-meta">${category.items.length} items <i class="fa-solid fa-arrow-right"></i></span>
                 </span>
             </a>
         `).join("");
@@ -58,7 +32,7 @@
         const category = menu.categories.find((item) => item.slug === slug);
         if (!category) return;
 
-        document.title = `${category.name.en} | The Lounge Cafe and Eatery`;
+        document.title = `${category.name} | The Lounge Cafe and Eatery`;
         const hero = document.querySelector(".category-hero");
         if (hero) hero.style.setProperty("--hero-image", `url('../${category.image}')`);
 
@@ -68,10 +42,10 @@
         const list = document.getElementById("categoryItems");
         const order = document.getElementById("categoryOrder");
 
-        if (title) title.textContent = category.name[language];
-        if (intro) intro.textContent = category.intro[language];
-        if (count) count.textContent = `${category.items.length} ${t("category.count")}`;
-        if (order) order.href = `../order/?category=${encodeURIComponent(category.name.en)}`;
+        if (title) title.textContent = category.name;
+        if (intro) intro.textContent = category.intro;
+        if (count) count.textContent = `${category.items.length} menu items`;
+        if (order) order.href = `../order/?category=${encodeURIComponent(category.name)}`;
         if (list) {
             list.innerHTML = category.items.map(([name, price]) => `
                 <article class="listing-item">
@@ -123,17 +97,13 @@
             event.preventDefault();
             const message = document.getElementById("orderMessage");
             if (message) {
-                message.textContent = t("order.message");
+                message.textContent = "Thanks. This demo has prepared the request, but it has not sent anything yet. Please call the cafe to confirm.";
                 message.hidden = false;
             }
         });
     }
 
-    document.querySelectorAll("[data-lang-toggle]").forEach((button) => {
-        button.addEventListener("click", () => setLanguage(language === "en" ? "vi" : "en"));
-    });
-
-    setLanguage(language);
+    renderDynamic();
     initLightbox();
     initUpdatesScroll();
     initOrderForm();

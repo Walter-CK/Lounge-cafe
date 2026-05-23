@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>The Lounge Cafe and Eatery | Logan Reserve Cafe</title>
     <meta name="description" content="The Lounge Cafe and Eatery in Logan Reserve serves coffee, matcha, breakfast, brunch, burgers, wraps, salads and fresh juices daily.">
-    <link rel="icon" href="images/lounge-logo.svg">
+    <link rel="icon" href="images/lounge-logo.jpg">
     <meta name="theme-color" content="#181514">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,24 +16,19 @@
 <body data-page="home">
     <nav class="nav">
         <div class="nav-inner">
-            <a href="#home" class="nav-logo" data-i18n-aria="nav.homeAria">
-                <img src="images/lounge-logo.svg" alt="The Lounge Cafe and Eatery logo" class="nav-logo-img">
-                <span>The <strong>Lounge</strong></span>
+            <a href="#home" class="nav-logo" aria-label="Back home">
+                <img src="images/lounge-logo.jpg" alt="The Lounge Cafe and Eatery logo" class="nav-logo-img nav-logo-img--wide">
             </a>
             <div class="nav-actions" aria-label="Contact and social links">
-                <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">
-                    <span data-lang-current>EN</span>
-                    <i class="fa-solid fa-language"></i>
-                </button>
                 <a href="https://www.instagram.com/thelounge.lr/" target="_blank" rel="noopener" class="nav-action nav-action--instagram" aria-label="Follow The Lounge on Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="https://www.google.com/maps/dir/?api=1&destination=-27.70871050,153.09612310" target="_blank" rel="noopener" class="nav-action nav-action--maps" aria-label="Get directions to The Lounge Cafe and Eatery">
                     <i class="fa-solid fa-location-dot"></i>
                 </a>
-                <a href="tel:+61730869706" class="nav-action nav-action--phone" data-i18n-aria="nav.callAria">
+                <a href="tel:+61730869706" class="nav-action nav-action--phone" aria-label="Call The Lounge Cafe and Eatery">
                     <i class="fa-solid fa-phone"></i>
-                    <span class="nav-action-label nav-action-label--phone" data-i18n="nav.call">Call</span>
+                    <span class="nav-action-label nav-action-label--phone">Call</span>
                 </a>
             </div>
         </div>
@@ -42,24 +37,24 @@
     <main>
         <section id="home" class="section-snap hero">
             <div class="hero-img hero-img--left">
-                <img src="images/lounge-fish-burger.jpg" alt="Fish burger special at The Lounge">
+                <img src="images/lounge-dessert.jpg" alt="Dessert outside The Lounge Cafe and Eatery">
             </div>
             <div class="hero-img hero-img--right">
-                <img src="images/coffee 4.webp" alt="Cafe coffee">
+                <img src="images/lounge-croissant.png" alt="Eggs Benny on a croissant at The Lounge">
             </div>
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="hero-badge-dot"></span>
-                    <span data-i18n="hero.badge">Open daily 7am-3pm</span>
+                    <span>Open daily 7am-3pm</span>
                 </div>
                 <h1 class="hero-heading">
-                    <span data-i18n="hero.title">The Lounge</span><br>
-                    <span class="hero-heading-accent" data-i18n="hero.titleAccent">Cafe and Eatery</span>
+                    <span>The Lounge</span><br>
+                    <span class="hero-heading-accent">Cafe and Eatery</span>
                 </h1>
-                <p class="hero-sub" data-i18n="hero.copy">A relaxed Logan Reserve cafe for strong coffee, matcha, breakfast, brunch, burgers, wraps, salads, juices and easy local catch-ups.</p>
+                <p class="hero-sub">A relaxed Logan Reserve cafe for strong coffee, matcha, breakfast, brunch, burgers, wraps, salads, juices and easy local catch-ups.</p>
                 <div class="hero-actions">
-                    <a href="#menu" class="btn btn-primary btn-lg" data-i18n="hero.menuCta">Explore Menu</a>
-                    <a href="#location" class="btn btn-outline btn-lg" data-i18n="hero.visitCta">Plan a Visit</a>
+                    <a href="#menu" class="btn btn-primary btn-lg">Explore Menu</a>
+                    <a href="#location" class="btn btn-outline btn-lg">Plan a Visit</a>
                 </div>
             </div>
         </section>
@@ -68,42 +63,56 @@
             <div class="container">
                 <div class="section-header">
                     <div>
-                        <h2 class="section-title" data-i18n="updates.title">From The Lounge</h2>
-                        <p class="section-sub" data-i18n="updates.copy">Fresh specials, cafe favourites and a warm local table in Logan Reserve.</p>
+                        <h2 class="section-title">Latest Instagram Updates</h2>
+                        <p class="section-sub">Recent public posts and specials from @thelounge.lr.</p>
                     </div>
                     <a href="https://www.instagram.com/thelounge.lr/" target="_blank" rel="noopener" class="fb-link">
-                        <i class="fa-brands fa-instagram"></i> <span data-i18n="updates.follow">Follow @thelounge.lr</span>
+                        <i class="fa-brands fa-instagram"></i> <span>Follow @thelounge.lr</span>
                     </a>
                 </div>
                 <div class="updates-scroll" id="updatesScroll">
-                    <article class="update-card">
-                        <div class="update-card-img"><img src="images/lounge-fish-burger.jpg" alt="The Lounge fish burger special"></div>
+                    <a class="update-card" href="https://www.instagram.com/thelounge.lr/reel/DX2wRN-Sh7F/" target="_blank" rel="noopener">
+                        <div class="update-card-img"><img src="images/lounge-logo.jpg" alt="The Lounge Labour Day Instagram update"></div>
                         <div class="update-card-body">
-                            <span class="update-date"><i class="fa-solid fa-burger"></i> Special</span>
-                            <h3 class="update-title" data-i18n="updates.fishBurger">Fish burger with crumbed fish, cheese, lettuce, tomato, sweet pickled onion and tartare sauce.</h3>
+                            <span class="update-date"><i class="fa-brands fa-instagram"></i> Latest post</span>
+                            <h3 class="update-title">Labour Day trading update from The Lounge.</h3>
                         </div>
-                    </article>
-                    <article class="update-card">
-                        <div class="update-card-img"><img src="images/coffee 4.webp" alt="Hot coffee"></div>
+                    </a>
+                    <a class="update-card" href="https://www.instagram.com/thelounge.lr/reel/DXsYYxzkh3I/" target="_blank" rel="noopener">
+                        <div class="update-card-img"><img src="images/lounge-croissant.png" alt="Eggs Benny on a croissant Instagram update"></div>
                         <div class="update-card-body">
-                            <span class="update-date"><i class="fa-solid fa-mug-hot"></i> Coffee</span>
-                            <h3 class="update-title" data-i18n="updates.coffee">Locals call out the coffee, friendly service and weekend brunch feel.</h3>
+                            <span class="update-date"><i class="fa-brands fa-instagram"></i> From Instagram</span>
+                            <h3 class="update-title">Eggs Benny on a croissant: a brunch plate made for the feed.</h3>
                         </div>
-                    </article>
-                    <article class="update-card">
-                        <div class="update-card-img"><img src="images/coffee 2.jpg" alt="Iced cafe drink"></div>
+                    </a>
+                    <a class="update-card" href="https://www.instagram.com/thelounge.lr/reel/DXawo8rER3G/" target="_blank" rel="noopener">
+                        <div class="update-card-img"><img src="images/lounge-logo.jpg" alt="Anzac Day Instagram update"></div>
                         <div class="update-card-body">
-                            <span class="update-date"><i class="fa-solid fa-leaf"></i> Matcha</span>
-                            <h3 class="update-title" data-i18n="updates.matcha">Matcha, iced lattes and fresh juices sit comfortably beside cafe classics.</h3>
+                            <span class="update-date"><i class="fa-brands fa-instagram"></i> Trading hours</span>
+                            <h3 class="update-title">Anzac Day closure notice and holiday opening updates.</h3>
                         </div>
-                    </article>
-                    <article class="update-card">
-                        <div class="update-card-img"><img src="images/wraps.webp" alt="Cafe wrap"></div>
+                    </a>
+                    <a class="update-card" href="https://www.instagram.com/thelounge.lr/reel/DWg2a-0kZxE/" target="_blank" rel="noopener">
+                        <div class="update-card-img"><img src="images/lounge-logo.jpg" alt="Easter holiday Instagram update"></div>
                         <div class="update-card-body">
-                            <span class="update-date"><i class="fa-solid fa-utensils"></i> Lunch</span>
-                            <h3 class="update-title" data-i18n="updates.lunch">Wraps, salads, bowls and generous plates for quick lunches or slow catch-ups.</h3>
+                            <span class="update-date"><i class="fa-brands fa-instagram"></i> Community</span>
+                            <h3 class="update-title">Easter holiday closure update for local customers.</h3>
                         </div>
-                    </article>
+                    </a>
+                    <a class="update-card" href="https://www.instagram.com/thelounge.lr/reel/DVs5BMNkegk/" target="_blank" rel="noopener">
+                        <div class="update-card-img"><img src="images/lounge-coffees.jpeg" alt="Coffee Instagram update"></div>
+                        <div class="update-card-body">
+                            <span class="update-date"><i class="fa-brands fa-instagram"></i> Coffee</span>
+                            <h3 class="update-title">Coffee, calm service and those slow local cafe mornings.</h3>
+                        </div>
+                    </a>
+                    <a class="update-card" href="https://www.instagram.com/thelounge.lr/p/DVUUGoUk52V/" target="_blank" rel="noopener">
+                        <div class="update-card-img"><img src="images/lounge-dessert.jpg" alt="Dessert at The Lounge"></div>
+                        <div class="update-card-body">
+                            <span class="update-date"><i class="fa-brands fa-instagram"></i> Sweets</span>
+                            <h3 class="update-title">Dessert plates, cake cabinet moments and cafe treats.</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -111,12 +120,12 @@
         <section id="about" class="section-snap about-section">
             <div class="container about-grid">
                 <div class="about-copy">
-                    <p class="eyebrow" data-i18n="about.eyebrow">About us</p>
-                    <h2 class="section-title" data-i18n="about.title">A clean, relaxed neighbourhood cafe with a little matcha-green lift.</h2>
-                    <p data-i18n="about.p1">The Lounge Cafe and Eatery is the easy Logan Reserve stop for breakfast, brunch, lunch and coffee, with indoor seating, outdoor tables, takeaway, kids options and friendly service.</p>
+                    <p class="eyebrow">About us</p>
+                    <h2 class="section-title">A clean, relaxed neighbourhood cafe with a little matcha-green lift.</h2>
+                    <p>The Lounge Cafe and Eatery is the easy Logan Reserve stop for breakfast, brunch, lunch and coffee, with indoor seating, outdoor tables, takeaway, kids options and friendly service.</p>
                 </div>
                 <div class="about-photo">
-                    <img src="images/lounge-fish-burger.jpg" alt="A burger special from The Lounge Cafe and Eatery">
+                    <img src="images/lounge-dessert.jpg" alt="Dessert outside The Lounge Cafe and Eatery">
                 </div>
             </div>
         </section>
@@ -124,8 +133,8 @@
         <section id="menu" class="section-snap menu-section">
             <div class="container">
                 <div class="section-title-center">
-                    <h2 class="section-title" data-i18n="menu.title">Menu</h2>
-                    <p class="section-lead" data-i18n="menu.copy">Browse the cafe favourites The Lounge is known for: coffee, matcha, breakfast, brunch, burgers, wraps, salads, juices and sweets.</p>
+                    <h2 class="section-title">Menu</h2>
+                    <p class="section-lead">Browse the cafe favourites The Lounge is known for: coffee, matcha, breakfast, brunch, burgers, wraps, salads, juices and sweets.</p>
                 </div>
                 <div class="category-grid" id="categoryGrid"></div>
             </div>
@@ -135,29 +144,29 @@
             <div class="container">
                 <div class="location-grid">
                     <div class="location-info">
-                        <h2 class="section-title section-title--light" data-i18n="location.title">Visit Us</h2>
-                        <p class="location-intro" data-i18n="location.copy">Find The Lounge at Shop 1 in Logan Reserve Shopping Village, with easy parking, takeaway and outdoor seating.</p>
+                        <h2 class="section-title section-title--light">Visit Us</h2>
+                        <p class="location-intro">Find The Lounge at Shop 1 in Logan Reserve Shopping Village, with easy parking, takeaway and outdoor seating.</p>
                         <div class="location-details">
                             <div class="location-item">
                                 <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
                                 <div>
-                                    <h4 data-i18n="location.addressLabel">Address</h4>
+                                    <h4>Address</h4>
                                     <a href="https://www.google.com/maps/dir/?api=1&destination=-27.70871050,153.09612310" target="_blank" rel="noopener">Shop 1, 450-458 Chambers Flat Road,<br>Logan Reserve QLD 4133</a>
                                 </div>
                             </div>
                             <div class="location-item">
                                 <div class="location-icon"><i class="fa-solid fa-clock"></i></div>
                                 <div>
-                                    <h4 data-i18n="location.hoursLabel">Opening Hours</h4>
+                                    <h4>Opening Hours</h4>
                                     <div class="hours">
-                                        <span data-i18n="location.everyday">Monday - Sunday</span><span>7:00am - 3:00pm</span>
+                                        <span>Monday - Sunday</span><span>7:00am - 3:00pm</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="location-item">
                                 <div class="location-icon"><i class="fa-solid fa-phone"></i></div>
                                 <div>
-                                    <h4 data-i18n="location.contactLabel">Contact</h4>
+                                    <h4>Contact</h4>
                                     <a href="tel:+61730869706" class="location-phone">(07) 3086 9706</a>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Note | The Lounge Cafe and Eatery</title>
     <meta name="description" content="Prepare a pickup or group enquiry note for The Lounge Cafe and Eatery in Logan Reserve.">
-    <link rel="icon" href="../images/lounge-logo.svg">
+    <link rel="icon" href="../images/lounge-logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -15,21 +15,16 @@
 <body data-page="order" data-depth="../">
     <nav class="nav">
         <div class="nav-inner">
-            <a href="../" class="nav-logo">
-                <img src="../images/lounge-logo.svg" alt="The Lounge Cafe and Eatery logo" class="nav-logo-img">
-                <span>The <strong>Lounge</strong></span>
+            <a href="../" class="nav-logo" aria-label="Back home">
+                <img src="../images/lounge-logo.jpg" alt="The Lounge Cafe and Eatery logo" class="nav-logo-img nav-logo-img--wide">
             </a>
             <div class="nav-actions">
-                <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">
-                    <span data-lang-current>EN</span>
-                    <i class="fa-solid fa-language"></i>
-                </button>
                 <a href="https://www.instagram.com/thelounge.lr/" target="_blank" rel="noopener" class="nav-action nav-action--instagram" aria-label="Follow The Lounge on Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="tel:+61730869706" class="nav-action nav-action--phone">
                     <i class="fa-solid fa-phone"></i>
-                    <span data-i18n="nav.call">Call</span>
+                    <span>Call</span>
                 </a>
             </div>
         </div>
@@ -40,54 +35,54 @@
             <div class="order-copy">
                 <a href="../" class="back-link" style="background: var(--gold-dark); border-color: var(--gold-dark);">
                     <i class="fa-solid fa-arrow-left"></i>
-                    <span data-i18n="order.back">Back to home</span>
+                    <span>Back to home</span>
                 </a>
-                <p class="eyebrow" data-i18n="order.eyebrow">Order Note</p>
-                <h1 class="section-title" data-i18n="order.title">Plan a pickup request</h1>
-                <p class="section-lead" data-i18n="order.copy">Use this note form to draft a pickup or group request before calling the cafe.</p>
+                <p class="eyebrow">Order Note</p>
+                <h1 class="section-title">Plan a pickup request</h1>
+                <p class="section-lead">Use this note form to draft a pickup or group request before calling the cafe.</p>
             </div>
 
             <div class="order-card">
                 <form class="order-form" id="orderForm">
                     <div class="form-grid">
                         <div class="form-field">
-                            <label for="customerName" data-i18n="order.name">Your name</label>
+                            <label for="customerName">Your name</label>
                             <input id="customerName" name="customerName" autocomplete="name" required>
                         </div>
                         <div class="form-field">
-                            <label for="customerPhone" data-i18n="order.phone">Phone number</label>
+                            <label for="customerPhone">Phone number</label>
                             <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required>
                         </div>
                         <div class="form-field">
-                            <label for="orderType" data-i18n="order.type">Request type</label>
+                            <label for="orderType">Request type</label>
                             <select id="orderType" name="orderType">
-                                <option data-i18n="order.typeRegular">Cafe pickup</option>
-                                <option data-i18n="order.typeCatering">Group / catering enquiry</option>
+                                <option>Cafe pickup</option>
+                                <option>Group / catering enquiry</option>
                             </select>
                         </div>
                         <div class="form-field">
-                            <label for="quantity" data-i18n="order.quantity">Quantity</label>
+                            <label for="quantity">Quantity</label>
                             <input id="quantity" name="quantity" type="number" min="1" value="1">
                         </div>
                         <div class="form-field form-field--full">
-                            <label for="orderItem" data-i18n="order.item">Item or request</label>
-                            <textarea id="orderItem" name="orderItem" required data-i18n-placeholder="order.placeholder" placeholder="e.g. 2 fish burgers, 1 iced matcha"></textarea>
+                            <label for="orderItem">Item or request</label>
+                            <textarea id="orderItem" name="orderItem" required placeholder="e.g. 2 fish burgers, 1 iced matcha"></textarea>
                         </div>
                         <div class="form-field">
-                            <label for="pickupDate" data-i18n="order.date">Preferred date</label>
+                            <label for="pickupDate">Preferred date</label>
                             <input id="pickupDate" name="pickupDate" type="date">
                         </div>
                         <div class="form-field">
-                            <label for="pickupTime" data-i18n="order.pickup">Preferred time</label>
+                            <label for="pickupTime">Preferred time</label>
                             <input id="pickupTime" name="pickupTime" type="time">
                         </div>
                         <div class="form-field form-field--full">
-                            <label for="orderNotes" data-i18n="order.notes">Notes</label>
-                            <textarea id="orderNotes" name="orderNotes" data-i18n-placeholder="order.notesPlaceholder" placeholder="Allergies, seating, group size or preferred pickup notes"></textarea>
+                            <label for="orderNotes">Notes</label>
+                            <textarea id="orderNotes" name="orderNotes" placeholder="Allergies, seating, group size or preferred pickup notes"></textarea>
                         </div>
                     </div>
                     <button class="btn btn-primary btn-lg" type="submit">
-                        <span data-i18n="order.submit">Prepare note</span>
+                        <span>Prepare note</span>
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
                     <p class="order-message" id="orderMessage" hidden></p>
