@@ -1,14 +1,15 @@
 :root {
-    --cream: #fff8ea;
-    --paper: #fffdf8;
+    --cream: #f7f2ea;
+    --paper: #fffaf3;
     --white: #ffffff;
-    --gold: #d97706;
-    --gold-dark: #78350f;
-    --green: #166534;
-    --ink: #17120d;
-    --muted: #6f665c;
-    --line: #eadbc3;
-    --shadow: 0 20px 55px rgba(69, 26, 3, 0.15);
+    --gold: #b98a58;
+    --gold-dark: #181514;
+    --green: #8fb85d;
+    --coral: #ee8b7d;
+    --ink: #191715;
+    --muted: #70665c;
+    --line: #dfd1c1;
+    --shadow: 0 20px 55px rgba(24, 21, 20, 0.16);
     --nav-h: 76px;
 }
 
@@ -39,7 +40,8 @@ a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 
 .container {
-    width: min(100% - 2.5rem, 1200px);
+    width: calc(100% - 2.5rem);
+    max-width: 1200px;
     margin-inline: auto;
 }
 
@@ -99,8 +101,8 @@ button, input, select, textarea { font: inherit; }
 
 .btn:hover { transform: translateY(-1px); }
 .btn-lg { min-height: 52px; padding-inline: 1.6rem; }
-.btn-primary { color: var(--white); background: var(--gold); box-shadow: 0 14px 28px rgba(168, 50, 37, 0.22); }
-.btn-primary:hover { background: #8e291f; }
+.btn-primary { color: var(--white); background: var(--gold-dark); box-shadow: 0 14px 28px rgba(24, 21, 20, 0.22); }
+.btn-primary:hover { background: #312a25; }
 .btn-outline { color: var(--gold-dark); background: var(--white); border: 1px solid var(--line); }
 .btn-outline:hover { box-shadow: 0 10px 24px rgba(69, 26, 3, 0.12); }
 
@@ -109,13 +111,14 @@ button, input, select, textarea { font: inherit; }
     inset: 0 0 auto;
     z-index: 100;
     height: var(--nav-h);
-    background: rgba(255, 253, 248, 0.96);
+    background: rgba(255, 250, 243, 0.96);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(234, 219, 195, 0.8);
 }
 
 .nav-inner {
-    width: min(100% - 1.4rem, 1200px);
+    width: calc(100% - 1.4rem);
+    max-width: 1200px;
     height: 100%;
     margin-inline: auto;
     display: flex;
@@ -174,8 +177,8 @@ button, input, select, textarea { font: inherit; }
 
 .nav-action-logo { width: 1.4rem; height: 1.4rem; object-fit: contain; filter: brightness(0) invert(1); }
 .nav-action-logo--uber { width: 2rem; }
-.nav-action--doordash { --action-color: #eb1700; }
-.nav-action--uber { --action-color: #06a85b; min-width: 50px; }
+.nav-action--instagram { --action-color: #181514; }
+.nav-action--maps { --action-color: var(--green); }
 .nav-action--phone { --action-color: var(--gold); gap: 0.45rem; min-width: 86px; }
 
 .hero {
@@ -184,8 +187,8 @@ button, input, select, textarea { font: inherit; }
     padding-top: var(--nav-h);
     text-align: center;
     background:
-        radial-gradient(circle at 18% 22%, rgba(245, 158, 11, 0.18), transparent 28rem),
-        radial-gradient(circle at 82% 68%, rgba(168, 50, 37, 0.12), transparent 26rem),
+        radial-gradient(circle at 18% 22%, rgba(143, 184, 93, 0.18), transparent 28rem),
+        radial-gradient(circle at 82% 68%, rgba(238, 139, 125, 0.16), transparent 26rem),
         var(--cream);
     overflow: hidden;
 }
@@ -207,7 +210,8 @@ button, input, select, textarea { font: inherit; }
 .hero-content {
     position: relative;
     z-index: 2;
-    width: min(100% - 2.5rem, 740px);
+    width: calc(100% - 2.5rem);
+    max-width: 740px;
     margin-inline: auto;
     overflow: hidden;
 }
@@ -278,7 +282,7 @@ button, input, select, textarea { font: inherit; }
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    color: var(--gold);
+    color: var(--gold-dark);
     font-weight: 800;
     white-space: nowrap;
 }
@@ -300,7 +304,7 @@ button, input, select, textarea { font: inherit; }
 .update-card {
     flex: 0 0 min(315px, calc(100vw - 2.5rem));
     overflow: hidden;
-    background: var(--cream);
+    background: #f5efe5;
     border: 1px solid var(--line);
     border-radius: 0.7rem;
     scroll-snap-align: start;
@@ -338,7 +342,7 @@ button, input, select, textarea { font: inherit; }
 
 .category-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 26px 65px rgba(69, 26, 3, 0.2);
+    box-shadow: 0 26px 65px rgba(24, 21, 20, 0.22);
 }
 
 .category-card-shade {
@@ -365,7 +369,7 @@ button, input, select, textarea { font: inherit; }
     align-items: center;
     justify-content: center;
     border-radius: 999px;
-    background: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.2);
     border: 1px solid rgba(255,255,255,0.32);
 }
 
@@ -457,7 +461,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .location-intro {
-    color: #f5dfb7;
+    color: #e8d4ba;
     margin-top: 0.7rem;
     line-height: 1.75;
 }
@@ -483,11 +487,11 @@ button, input, select, textarea { font: inherit; }
     flex: 0 0 auto;
     border-radius: 0.6rem;
     background: rgba(255,255,255,0.1);
-    color: #ffd98a;
+    color: #d9f1a2;
 }
 
 .location-item h4 { margin-bottom: 0.32rem; }
-.location-item a, .hours { color: #f5dfb7; line-height: 1.65; font-size: 0.94rem; }
+.location-item a, .hours { color: #e8d4ba; line-height: 1.65; font-size: 0.94rem; }
 .location-phone { font-size: 1.35rem !important; font-weight: 800; }
 .hours { display: grid; grid-template-columns: auto auto; gap: 0.25rem 1rem; }
 .location-map iframe { min-height: 430px; }
@@ -534,7 +538,8 @@ button, input, select, textarea { font: inherit; }
 }
 
 .category-hero-content {
-    width: min(100% - 2.5rem, 1100px);
+    width: calc(100% - 2.5rem);
+    max-width: 1100px;
     margin: 0 auto;
     padding: 5rem 0 3rem;
 }
@@ -681,8 +686,8 @@ button, input, select, textarea { font: inherit; }
 .order-message {
     padding: 0.85rem 1rem;
     border-radius: 0.65rem;
-    background: #ecfdf5;
-    color: var(--green);
+    background: #eef7e5;
+    color: #355b24;
     font-weight: 800;
     line-height: 1.5;
 }
@@ -711,13 +716,34 @@ button, input, select, textarea { font: inherit; }
     .nav-action-label--phone { display: none; }
     .nav-action-logo { width: 1.25rem; }
     .nav-action-logo--uber { width: 1.7rem; }
-    .container, .hero-content, .category-hero-content { width: min(100% - 1.5rem, 1200px); }
+    .container, .hero-content, .category-hero-content { width: calc(100% - 1.5rem); }
     .section-header { align-items: flex-start; flex-direction: column; }
     .hours { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
+    .nav { overflow: hidden; }
+    .nav-inner {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        padding-inline: 0.7rem;
+    }
+    .nav-actions {
+        display: none;
+    }
     .nav-logo-img { width: 42px; height: 42px; }
+    .nav-action--maps { display: none; }
+    .nav-action--instagram { display: none; }
+    .nav-actions { gap: 0.2rem; }
+    .language-toggle { min-width: 46px; width: 46px; padding: 0; }
+    .language-toggle i { display: none; }
+    .hero-img--right { display: none; }
+    .hero-img--left { left: -0.8rem; top: 17%; width: 92px; height: 128px; }
+    .hero-content {
+        width: calc(100vw - 1.5rem);
+        max-width: 340px;
+    }
     .hero-heading { font-size: 2.28rem; }
     .hero-sub { font-size: 0.96rem; }
     .category-grid {
@@ -759,6 +785,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 @media (max-width: 430px) {
+    .nav-action--instagram { display: none; }
     .category-grid { gap: 0.45rem; }
     .category-card { min-height: 104px; }
     .category-card-content { min-height: 104px; }

@@ -1,14 +1,9 @@
 (function () {
-    const menu = window.BAKEHOUSE_MENU;
+    const menu = window.LOUNGE_MENU;
     const root = document.documentElement;
     const page = document.body.dataset.page;
-    const savedLanguage = localStorage.getItem("bakehouseLanguage");
+    const savedLanguage = localStorage.getItem("loungeLanguage");
     let language = savedLanguage === "vi" ? "vi" : "en";
-
-    function asset(path) {
-        const depth = document.body.dataset.depth || "";
-        return `${depth}${path}`;
-    }
 
     function t(key) {
         return menu.translations[language][key] || menu.translations.en[key] || key;
@@ -16,7 +11,7 @@
 
     function setLanguage(nextLanguage) {
         language = nextLanguage === "vi" ? "vi" : "en";
-        localStorage.setItem("bakehouseLanguage", language);
+        localStorage.setItem("loungeLanguage", language);
         root.lang = language;
         document.querySelectorAll("[data-lang-current]").forEach((node) => {
             node.textContent = language.toUpperCase();
@@ -63,7 +58,7 @@
         const category = menu.categories.find((item) => item.slug === slug);
         if (!category) return;
 
-        document.title = `${category.name.en} | Logan Reserve Bakehouse`;
+        document.title = `${category.name.en} | The Lounge Cafe and Eatery`;
         const hero = document.querySelector(".category-hero");
         if (hero) hero.style.setProperty("--hero-image", `url('../${category.image}')`);
 
