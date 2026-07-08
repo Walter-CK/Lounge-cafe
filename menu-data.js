@@ -1,38 +1,4 @@
 window.LOUNGE_MENU = {
-    // NOTE: fb-video-01.mp4, fb-video-02.mp4 and fb-video-04.mp4 contain audio only
-    // (no video stream) — they were likely saved incorrectly from Facebook and will
-    // always render as a blank/black box in a <video> tag. They're excluded below
-    // until re-exported with an actual video track. fb-video-03.mp4 is a real video.
-    facebookPosts: [
-        { type: "video", src: "images/facebook-videos/fb-video-03.mp4", poster: "images/facebook-videos/posters/fb-video-03-poster.jpg", alt: "What's new at The Lounge video", caption: "A quick look at what is new at The Lounge." },
-        { type: "image", src: "images/facebook-posts/fb-post-01.jpg", alt: "The Lounge Facebook update", caption: "Fresh cafe plates from the Lounge kitchen." },
-        { type: "image", src: "images/facebook-posts/fb-post-02.jpg", alt: "The Lounge Facebook update", caption: "Coffee and calm mornings in Logan Reserve." },
-        { type: "image", src: "images/facebook-posts/fb-post-03.jpg", alt: "The Lounge Facebook update", caption: "Brunch specials, plated and ready." },
-        { type: "image", src: "images/facebook-posts/fb-post-04.jpg", alt: "The Lounge Facebook update", caption: "Sweet cabinet moments for the afternoon." },
-        { type: "image", src: "images/facebook-posts/fb-post-05.jpg", alt: "The Lounge Facebook update", caption: "Local lunch favourites from the kitchen." },
-        { type: "image", src: "images/facebook-posts/fb-post-06.jpg", alt: "The Lounge Facebook update", caption: "Fresh drinks and bright cafe colours." },
-        { type: "image", src: "images/facebook-posts/fb-post-07.jpg", alt: "The Lounge Facebook update", caption: "Breakfast plates made for slow mornings." },
-        { type: "image", src: "images/facebook-posts/fb-post-08.jpg", alt: "The Lounge Facebook update", caption: "Lounge specials from the latest feed." },
-        { type: "image", src: "images/facebook-posts/fb-post-09.jpg", alt: "The Lounge Facebook update", caption: "Matcha, coffee and easy catch-ups." },
-        { type: "image", src: "images/facebook-posts/fb-post-10.jpg", alt: "The Lounge Facebook update", caption: "Comfort food from the cafe counter." },
-        { type: "image", src: "images/facebook-posts/fb-post-11.jpg", alt: "The Lounge Facebook update", caption: "Weekend brunch energy at The Lounge." },
-        { type: "image", src: "images/facebook-posts/fb-post-12.jpg", alt: "The Lounge Facebook update", caption: "House-made treats and coffee pairings." },
-        { type: "image", src: "images/facebook-posts/fb-post-13.jpg", alt: "The Lounge Facebook update", caption: "Fresh bowls, greens and lighter bites." },
-        { type: "image", src: "images/facebook-posts/fb-post-14.jpg", alt: "The Lounge Facebook update", caption: "Golden toasties and cafe lunch plates." },
-        { type: "image", src: "images/facebook-posts/fb-post-15.jpg", alt: "The Lounge Facebook update", caption: "Desserts, slices and small sweet wins." },
-        { type: "image", src: "images/facebook-posts/fb-post-16.jpg", alt: "The Lounge Facebook update", caption: "Kitchen specials shared from Facebook." },
-        { type: "image", src: "images/facebook-posts/fb-post-17.jpg", alt: "The Lounge Facebook update", caption: "Cold drinks and colourful cafe refreshers." },
-        { type: "image", src: "images/facebook-posts/fb-post-18.jpg", alt: "The Lounge Facebook update", caption: "Breakfast favourites with a Lounge twist." },
-        { type: "image", src: "images/facebook-posts/fb-post-19.jpg", alt: "The Lounge Facebook update", caption: "Burgers, chips and hearty lunch ideas." },
-        { type: "image", src: "images/facebook-posts/fb-post-20.jpg", alt: "The Lounge Facebook update", caption: "Freshly posted cafe moments." },
-        { type: "image", src: "images/facebook-posts/fb-post-21.jpg", alt: "The Lounge Facebook update", caption: "Coffee runs and catch-up tables." },
-        { type: "image", src: "images/facebook-posts/fb-post-22.jpg", alt: "The Lounge Facebook update", caption: "Sweets from the latest updates." },
-        { type: "image", src: "images/facebook-posts/fb-post-23.jpg", alt: "The Lounge Facebook update", caption: "Seasonal plates from the Lounge team." },
-        { type: "image", src: "images/facebook-posts/fb-post-24.jpg", alt: "The Lounge Facebook update", caption: "Fresh lunch ideas for local regulars." },
-        { type: "image", src: "images/facebook-posts/fb-post-25.jpg", alt: "The Lounge Facebook update", caption: "Brunch, coffee and Logan Reserve hospitality." },
-        { type: "image", src: "images/facebook-posts/fb-post-26.jpg", alt: "The Lounge Facebook update", caption: "Cafe specials worth checking first." },
-        { type: "image", src: "images/facebook-posts/fb-post-27.jpg", alt: "The Lounge Facebook update", caption: "Sweet and savoury moments from the feed." }
-    ],
     categories: [
         {
             slug: "bread",
