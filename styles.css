@@ -515,6 +515,46 @@ button, input, select, textarea { font: inherit; }
     cursor: pointer;
 }
 
+.update-read-more {
+    display: inline;
+    margin-left: 0.3rem;
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--gold);
+    font-family: "Inter", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-lightbox-box {
+    position: relative;
+    background: var(--cream);
+    color: var(--ink);
+    width: 100%;
+    max-width: 520px;
+    max-height: 80svh;
+    overflow-y: auto;
+    padding: 2rem 1.75rem 1.75rem;
+    border-radius: 0.9rem;
+    cursor: auto;
+}
+
+.text-lightbox-box p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    white-space: pre-wrap;
+}
+
+.text-lightbox .lightbox-close {
+    color: var(--gold-dark);
+    top: 0.6rem;
+    right: 0.7rem;
+}
+
 .subpage {
     padding-top: var(--nav-h);
     background: var(--paper);
