@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>The Lounge Cafe and Eatery | Logan Reserve Cafe</title>
+    <meta name="description" content="The Lounge Cafe and Eatery in Logan Reserve serves coffee, matcha, breakfast, brunch, burgers, wraps, salads and fresh juices daily.">
+    <link rel="icon" type="image/png" href="images/logo-transparent.png">
+    <meta name="theme-color" content="#181514">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo" aria-label="Back home">
+                <img src="images/logo-transparent.png" alt="The Lounge Cafe and Eatery logo" class="nav-logo-img nav-logo-img--wide">
+            </a>
+            <div class="nav-actions" aria-label="Contact and social links">
+                <a href="https://www.facebook.com/profile.php?id=61578829411576" target="_blank" rel="noopener" class="nav-action nav-action--facebook" aria-label="Follow The Lounge on Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/thelounge.lr/" target="_blank" rel="noopener" class="nav-action nav-action--instagram" aria-label="Follow The Lounge on Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=-27.70871050,153.09612310" target="_blank" rel="noopener" class="nav-action nav-action--maps" aria-label="Get directions to The Lounge Cafe and Eatery">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+                <a href="tel:+61730869706" class="nav-action nav-action--phone" aria-label="Call The Lounge Cafe and Eatery">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="nav-action-label nav-action-label--phone">Call</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section-snap hero">
+            <div class="hero-img hero-img--left">
+                <img src="images/dessert.jpg" alt="Dessert outside The Lounge Cafe and Eatery">
+            </div>
+            <div class="hero-img hero-img--right">
+                <img src="images/croissant.png" alt="Eggs Benny on a croissant at The Lounge">
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    <span>Open daily 7am-3pm</span>
+                </div>
+                <h1 class="hero-heading">
+                    <span>The Lounge</span><br>
+                    <span class="hero-heading-accent">Cafe and Eatery</span>
+                </h1>
+                <p class="hero-sub">A relaxed Logan Reserve cafe for strong coffee, matcha, breakfast, brunch, burgers, wraps, salads, juices and easy local catch-ups.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary btn-lg">Explore Menu</a>
+                    <a href="#location" class="btn btn-outline btn-lg">Plan a Visit</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="updates" class="section-snap updates-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">Latest Updates</h2>
+                        <p class="section-sub">Synced with our facebook page.</p>
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61578829411576" target="_blank" rel="noopener" class="fb-link">
+                        <i class="fa-brands fa-facebook-f"></i> <span>Follow us</span>
+                    </a>
+                </div>
+                <div class="updates-scroll" id="updatesScroll"></div>
+            </div>
+        </section>
+        <section id="about" class="section-snap about-section">
+            <div class="container about-grid">
+                <div class="about-copy">
+                    <p class="eyebrow">About us</p>
+                    <h2 class="section-title">A clean, relaxed neighbourhood cafe with a little matcha-green lift.</h2>
+                    <p>The Lounge Cafe and Eatery is the easy Logan Reserve stop for breakfast, brunch, lunch and coffee, with indoor seating, outdoor tables, takeaway, kids options and friendly service.</p>
+                </div>
+                <div class="about-photo">
+                    <img src="images/menu/about-lounge.jpg" alt="The Lounge Cafe and Eatery table spread">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section-snap menu-section">
+            <div class="container">
+                <div class="section-title-center">
+                    <h2 class="section-title">Menu</h2>
+                    <p class="section-lead">Browse the cafe favourites The Lounge is known for: coffee, matcha, breakfast, brunch, burgers, wraps, salads, juices and sweets.</p>
+                </div>
+                <div class="category-grid" id="categoryGrid"></div>
+            </div>
+        </section>
+
+        <section id="location" class="section-snap location-section">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="location-info">
+                        <h2 class="section-title section-title--light">Visit Us</h2>
+                        <p class="location-intro">Find The Lounge at Shop 1 in Logan Reserve Shopping Village, with easy parking, takeaway and outdoor seating.</p>
+                        <div class="location-details">
+                            <div class="location-item">
+                                <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Address</h4>
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=-27.70871050,153.09612310" target="_blank" rel="noopener">Shop 1, 450-458 Chambers Flat Road,<br>Logan Reserve QLD 4133</a>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <div class="location-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <h4>Opening Hours</h4>
+                                    <div class="hours">
+                                        <span>Monday - Sunday</span><span>7:00am - 3:00pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <div class="location-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Contact</h4>
+                                    <a href="tel:+61730869706" class="location-phone">(07) 3086 9706</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-map embed-frame">
+                        <iframe title="Google map for The Lounge Cafe and Eatery" src="https://www.google.com/maps?q=Shop%201%20450-458%20Chambers%20Flat%20Road%20Logan%20Reserve%20QLD%204133&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" type="button" aria-label="Close image">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="menu-data.js"></script>
+    <script src="site.js"></script>
+</body>
+</html>
