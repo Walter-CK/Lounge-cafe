@@ -4,34 +4,11 @@
 
     function renderDynamic() {
         if (page === "home") {
-            renderFacebookPosts();
             renderCategoryCards();
         }
         if (page === "category") {
             renderCategoryPage();
         }
-    }
-
-    function renderFacebookPosts() {
-        const scroll = document.getElementById("updatesScroll");
-        if (!scroll || !menu.facebookPosts) return;
-
-        scroll.innerHTML = menu.facebookPosts.map((post) => {
-            const mediaHTML = post.type === "video"
-                ? `<video class="update-card-media" src="${post.src}" poster="${post.poster || ''}" autoplay muted loop playsinline preload="auto" aria-label="${post.alt}"></video>`
-                : `<img class="update-card-media" src="${post.src}" alt="${post.alt}" loading="lazy">`;
-
-            return `
-                <article class="update-card--fb">
-                    <div class="update-card-media-wrap">
-                        ${mediaHTML}
-                    </div>
-                    <div class="update-card-body">
-                        <p class="update-card-caption">${post.caption}</p>
-                    </div>
-                </article>
-            `;
-        }).join("");
     }
 
     function renderCategoryCards() {
@@ -86,7 +63,7 @@
         const lightboxImg = document.getElementById("lightbox-img");
         if (!lightbox || !lightboxImg) return;
 
-        document.querySelectorAll("img.update-card-media, .about-photo img").forEach((img) => {
+        document.querySelectorAll(".update-card-img img, .about-photo img").forEach((img) => {
             img.addEventListener("click", () => {
                 lightboxImg.src = img.src;
                 lightboxImg.alt = img.alt;
